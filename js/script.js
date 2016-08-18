@@ -10,7 +10,8 @@ function expressionBuilder(inputNumber) {
     inputNumber = remainder;
   })
   var finalArray = fixFives(romanArray);
-  return romanArray;
+  var displayArray = buildNumeral(finalArray, symbols);
+  return displayArray;
 }
 
 function makeSubtraction(numberString, index, values, symbols) {
@@ -63,10 +64,27 @@ function fixFives(romanArray) {
   return romanArray;
 };
 
-function buildNumeral(inputArray) {
+function buildNumeral(inputArray, symbols) {
   var romanString = inputArray.join(";");
   var romanArray = romanString.split(";");
-  romanArray.forEach(function() {
-// add lots of stuff
-  });
+  romanString = "";
+  romanArray.forEach(function(element) {
+    symbols.forEach(function(symbol) {
+      if (element.includes(symbol)) {
+        for (i=0; i<parseInt(element); i++) {
+          romanString = romanString + symbol;
+        }
+      }
+    })
+  });romanString = romanString.replace(/Z/g,"X")
+  return romanString;
 }
+
+
+$(document).ready(function() {
+    $("#numberInput").submit(function(event){
+      event.preventDefault();
+      var inputNumber = $("#number").val();
+      $("#displayArea").text(expressionBuilder(inputNumber));
+    });
+});

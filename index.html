@@ -3,9 +3,19 @@
   <head>
     <script src="js/jquery-3.1.0.js"></script>
     <script src="js/script.js"></script>
-    <title></title>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <title>Roman Numeral Converter</title>
   </head>
   <body>
-
+    <form id="numberInput">
+    <div class="form-group">
+      <label for "number"> Enter a number to convert to Roman numeral format</label>
+      <Input id="number" type="number">
+        <button type="submit" class="btn-success">Convert Number!</button>
+    </div>
+  </form>
+  <div id="displayArea">
+  </div>
   </body>
 </html>
