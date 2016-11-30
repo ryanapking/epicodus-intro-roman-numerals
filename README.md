@@ -6,9 +6,14 @@
 
 ## Description
 
-_Takes user input and translates each word into pig latin._
+_Takes a user-inputted number and converts it into roman numerals._
 
-_Specifications:_
+## Setup/Installation Requirements
+
+* _Open index.html in a web browser_
+* _Or view the project on [GitHub Pages](https://ryanapking.github.io/epicodus-intro-roman-numerals/)_
+
+## Specifications
 
 _Output won't accept greater than 3,999_
 * _4000_
@@ -34,15 +39,6 @@ _Symbols places cannot be skipped_
 * _999_
 * _CMXCIX_
 
-
-
-
-
-## Setup/Installation Requirements
-
-* _Clone from github_
-* _Open HTML file_
-
 ## Known Bugs
 
 _None_
@@ -59,4 +55,4 @@ _HTML, CSS, JavaScript, Bootstrap, jQuery_
 
 *This program is licensed under the MIT license.*
 
-Copyright (c) 2016 **_Brian Dutz and Stephen Newkirk_**
+Copyright (c) 2016 **_Brian Dutz and Ryan Apking_**
